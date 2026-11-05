@@ -1,11 +1,10 @@
-
-const globals = require("globals");
-const js = require("@eslint/js");
+const globals = require('globals');
+const js = require('@eslint/js');
 
 module.exports = [
     js.configs.recommended,
     {
-        files: ["**/*.{js,mjs,cjs}"],
+        files: ['**/*.{js,mjs,cjs}'],
         languageOptions: {
             globals: {
                 ...globals.node,
@@ -13,8 +12,8 @@ module.exports = [
             },
         },
         rules: {
-            "no-console": "warn",
-            "prefer-const": "error",
+            'no-console': 'warn',
+            'prefer-const': 'error',
         },
     },
 ];
