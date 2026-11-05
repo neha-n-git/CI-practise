@@ -3,6 +3,8 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
         "test": "jest",
@@ -13,6 +15,9 @@
     "license": "ISC",
     "description": "",
     "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.14.0",
+        "globals": "^17.14.0",
         "jest": "^30.5.2",
         "prettier": "^3.9.10",
         "supertest": "^7.3.1"
