@@ -48,6 +48,5 @@ jobs:
                   context: .
                   push: true
                   tags: |
-                        nehane/ci_cd:latest
-                        nehane/ci_cd:${{github.sha}}
-
+                      nehane/ci_cd:latest
+                      nehane/ci_cd:${{github.sha}}
